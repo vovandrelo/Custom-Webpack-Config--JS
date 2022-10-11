@@ -1,0 +1,20 @@
+// Раньше импорт внешних библиотек происходил с помощью ~, но это решение устарело. В настоящее время рекомедуется испоьлзовать обычный
+// синтаксис импорта, wewbpack сначала попытается реализовать @import с использованием относительного пути. В случае, если модуль не
+// будет найден, импорт будет происходить из node_modules.
+@improt "~normalize.css"
+
+// Импорт sass-модулей:
+@import "./fonts.sass"
+    
+.container
+    text-align: center
+    font-family: 'Roboto'
+    max-width: 500px
+    margin: 0 auto
+
+.logo
+    background-image: url("../assets/images/webpack-logo.png")
+    background-size: cover
+    height: 200px
+    width: 200px
+    margin: 0 auto
